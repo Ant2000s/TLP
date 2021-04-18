@@ -24,7 +24,7 @@ c2
     END -> E [label="-[1-9], 1-9"];
     END -> C [label="0-9"];
     END -> A [label="0-9"];
-    END -> E [label="0-9"];
+    END -> S [label="0-9"];
   }
 c2
 </details>
