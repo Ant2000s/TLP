@@ -3,6 +3,13 @@
 <summary></summary>
 c1
   digraph G {
+    main -> parse;
+    parse -> execute;
+    main -> init;
+    main -> cleanup;
+    execute -> { make_string; printf};
+    init -> make_string;
+    main -> printf;
     execute -> compare;
   }
 c1
