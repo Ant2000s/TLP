@@ -3,13 +3,10 @@
 <summary></summary>
 c1
   digraph G {
-    main -> parse;
-    parse -> execute;
-    main -> init;
-    execute -> { make_string; printf};
-    init -> make_string;
-    main -> printf;
-    execute -> compare;
+    END -> B [label="A-Z, a-z, 0-9"];
+    B -> A [label="A-Z, a-z, 0-9"];
+    A -> A [label="A-Z, a-z, 0-9"];
+    A -> S [label="A-Z, a-z, _"];
   }
 c1
 </details>
