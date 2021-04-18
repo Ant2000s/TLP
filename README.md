@@ -3,9 +3,9 @@
 <summary></summary>
 c1
   digraph G {
-    END -> C;
-    C -> S [label="\s"];  
-    C -> B [label="A-Z, a-z, 0-9"];
+    END -> B [label="space"];
+    END -> B;
+    S -> B [label="space"];
     B -> A [label="A-Z, a-z, 0-9"];
     A -> A [label="A-Z, a-z, 0-9"];
     A -> S [label="A-Z, a-z, _"];
