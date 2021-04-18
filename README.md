@@ -41,3 +41,4 @@ c2
     S -> H [label="space"];
   }
 c2
+  </details>
