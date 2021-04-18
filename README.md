@@ -6,7 +6,6 @@ c1
     main -> parse;
     parse -> execute;
     main -> init;
-    main -> cleanup;
     execute -> { make_string; printf};
     init -> make_string;
     main -> printf;
