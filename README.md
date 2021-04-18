@@ -17,7 +17,7 @@ c1
 <details> 
 <summary></summary>
 c2
-  digraph G {
+  digraph S {
     END -> H [label="space"];
     END -> G [label="F, f, L, l"];
     END -> F [label="0-9"];
