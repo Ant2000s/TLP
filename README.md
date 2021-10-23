@@ -49,12 +49,12 @@ c2
 <summary></summary>
 c3
   digraph A {
-    factorial->factorial
-    main->printf
-    main->__isoc99_scanf
-    main->printf
-    main->factorial
-    main->printf
+    factorial -> factorial
+    main -> printf
+    main -> __isoc99_scanf
+    main -> printf
+    main -> factorial
+    main -> printf
     }
 c3
 </details>
