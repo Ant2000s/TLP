@@ -66,3 +66,27 @@ c3
     }
 c3
 </details>
+
+![Alt text](https://g.gravizo.com/source/svg/c4?https%3A%2F%2Fraw.githubusercontent.com%2FAnt2000s%2FTLP%2Fmain%2FREADME.md)
+<details> 
+<summary></summary>
+c4
+  digraph AA {
+"  store i32 0, i32* %1, align 4" -> "  %1 = alloca i32, align 4"
+"  store i32 %5, i32* %2, align 4" -> "  %5 = call i32 @rand() #2"
+"  store i32 %5, i32* %2, align 4" -> "  %2 = alloca i32, align 4"
+"  store i32 %6, i32* %3, align 4" -> "  %6 = call i32 @rand() #2"
+"  store i32 %6, i32* %3, align 4" -> "  %3 = alloca i32, align 4"
+"  %7 = load i32, i32* %2, align 4" -> "  %2 = alloca i32, align 4"
+"  %8 = load i32, i32* %3, align 4" -> "  %3 = alloca i32, align 4"
+"  %9 = add nsw i32 %7, %8" -> "  %7 = load i32, i32* %2, align 4"
+"  %9 = add nsw i32 %7, %8" -> "  %8 = load i32, i32* %3, align 4"
+"  store i32 %9, i32* %4, align 4" -> "  %9 = add nsw i32 %7, %8"
+"  store i32 %9, i32* %4, align 4" -> "  %4 = alloca i32, align 4"
+"  %10 = load i32, i32* %4, align 4" -> "  %4 = alloca i32, align 4"
+"  ret i32 %10" -> "  %10 = load i32, i32* %4, align 4"
+
+    }
+c4
+</details>
+
